@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./new style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./Logo 101.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SPECIFICATION</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONNECT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>SOUND<br>SOUND<br>SOUND</h1>
+            </div>
+            <div class="right-col">
+            <P>Click Here To Listen</P>
+            <img src="./Play.jpg" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="song.mp3">
+        <source src="./Mp3.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song = document.getElementById("song");
+        var icon = dcument.getElementById("icon");
+
+        icon.onclick=function(){
+            Mp3.play();
+        }
+    </script>
+
+<!-- <script>
+        var Mp3 = document.getElementById("Mp3");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+           if Mp3.Pause(){
+            Mp3.Play();
+            icon.src() = "./Pause.jpg"
+           }else{
+            Mp3.play();
+            icon src="./Play.jpg";
+           }
+        }
+
+    </script> -->
+</body>
+</html>
+
+
+
+
+
